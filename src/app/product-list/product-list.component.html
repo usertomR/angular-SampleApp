@@ -1,0 +1,25 @@
+<h2>Products</h2>
+
+<div *ngFor="let a_product of all_products">
+  <a [title]="a_product.name + ' details'">
+      {{ a_product.name }}
+  </a>
+  <p *ngIf="a_product.description; else Block">
+    Description : {{a_product.description}}
+  </p>
+  <ng-template #Block><br></ng-template>
+  <button type="button" (click)="share()">
+    share
+  </button>
+  <app-product-alerts [product]="a_product"></app-product-alerts>
+  <div *ngIf="true">
+    ----------
+  </div>
+</div>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
