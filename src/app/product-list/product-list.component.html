@@ -11,7 +11,7 @@
   <button type="button" (click)="share()">
     share
   </button>
-  <app-product-alerts [product]="a_product"></app-product-alerts>
+  <app-product-alerts [product]="a_product" (notify)="onNotify()"></app-product-alerts>
   <div *ngIf="true">
     ----------
   </div>
