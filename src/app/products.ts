@@ -25,7 +25,7 @@ export const products = [
     description: ''
   },
   {
-    id: 1,
+    id: 4,
     name: 'standard watch',
     price: 400,
     description: 'A watch'
